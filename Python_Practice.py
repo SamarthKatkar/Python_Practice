@@ -86,3 +86,30 @@
 # print(marks)
 # marks.sort() #to sort the list in ascending order
 # print(marks)
+
+#Tuples are ordered but immutable collections
+# marks=(23,21,15,10,9,22,12,11,22,23,31,19,17,4,9,10)
+# print(marks)
+# print(marks.count(22)) #to count the number of times a number appears in the tuple
+# print(marks.index(19)) #to find the index of a number in the tuple
+
+#Sets are unordered, unique collections (no duplicates).
+# cities={"Pune","Mumbai","Nagpur","Nashik","Sangli","Kolhapur"}
+# print(cities)
+# cities.add("Solapur") #to add a city to the set
+# print(cities)  
+# cities.remove("Solapur")
+# print(cities) #to remove a city from the set    
+# cities.pop() #to remove a random city from the set
+# print(cities)
+# villages={"Pimpri","Chinchwad","Bhosari","Nigdi","Akurdi"}
+# print(cities.union(villages)) #to combine two sets
+
+#Dictionaries store key-value pairs and allow fast lookups.
+# fruits={"apple":100,"banana":50,"guava":80,"pineapple":120}
+# print(fruits["apple"]) #to access the value of a key in the dictionary
+# fruits["mango"]=500
+# print(fruits) #to add a new key-value pair to the dictionary    
+# print(fruits.keys()) #to get all the keys in the dictionary
+# print(fruits.values()) #to get all the values in the dictionary
+
