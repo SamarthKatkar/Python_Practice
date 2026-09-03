@@ -113,3 +113,58 @@
 # print(fruits.keys()) #to get all the keys in the dictionary
 # print(fruits.values()) #to get all the values in the dictionary
 
+# 3/9/26
+#OOPs in python
+#class is a blueprint for creating objects.
+#object is an instance of a class.
+
+# class biodata:
+#     education ="B-tech"
+#     def get_marks(self): #self is a way to refer to the object of the class which is being created.
+#         #print(self) memory address of the object is printed here.
+#         return 85
+    
+# a=biodata() # an object of class biodata is created here
+# print(a.get_marks()) #biodata's method get_marks() is called here
+# print(a.education) 
+# b=biodata()
+# print(b.get_marks())
+# print(b.education)
+
+# class cat:
+#     species="Pet"
+    
+#     def __init__ (self, name, breed, age):
+#         self.name=name
+#         self.breed=breed
+#         self.age=age
+        
+#     def meow(self):
+#         print(f"{self.name} is meowing!")
+        
+# cat1=cat("Tom","Persian",2)
+# cat2=cat("Mani","Stray", 3)
+
+# print(f"My 1st cats's name is {cat1.name}, her breed is {cat1.breed} and age is {cat1.age} years.")
+# print(f"My 2nd cats's name is {cat2.name}, her breed is {cat2.breed} and age is {cat2.age} years.")
+
+#Constructor : 
+# class biodata:
+#    def __init__(self,name,age,gender): # this init means(method) is constructor, used for initializing the object of the class.
+#        self.name=name
+#        self.age=age
+#        self.gender=gender
+       
+#    def get_name(self): #self is a way to refer to the object of the class which is being created.
+#         #print(self) memory address of the object is printed here.
+#         return self.name 
+    
+#    def get_info(self):
+#         print(f"My name is {self.name}, my age is {self.age} and my gender is {self.gender}.")
+    
+    
+# student1= biodata("Samarth",20,"Male")
+# print(student1.get_info())
+# student2=biodata("Bison",60,"Female")
+# print(student2.get_info())
+
