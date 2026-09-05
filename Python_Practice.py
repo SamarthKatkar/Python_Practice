@@ -168,3 +168,65 @@
 # student2=biodata("Bison",60,"Female")
 # print(student2.get_info())
 
+# 5/9/26
+
+# class Company:
+#     company = "Nvidia" #This is class attribute
+#     def __init__(self,salary,name,bond,company):
+#         self.salary=salary
+#         self.name=name
+#         self.bond=bond
+#         self.company=company
+        
+#     def get_salary(self):
+#         return self.salary
+    
+#     def get_info(self):
+#         print(f"My name is {self.name}, my salary is {self.salary} and my bond is for {self.bond} years.")
+        
+# c1=Company(10000,"Jay",1,"Microchip")
+# print(c1.company) # Will always print instance attributr whenever present
+# print(Company.company) # Will always print class attribute
+# #Object interspection: A way to find all the methods that a particular object in python has.
+# #print(dir(c1)) # ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__firstlineno__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__static_attributes__', '__str__', '__subclasshook__', '__weakref__', 'bond', 'company', 'get_info', 'get_salary', 'name', 'salary'] All the method and attributes of the object c1 are printed here.
+
+# Inheritance: Inheritance is a way to create a new class from an existing class. The new class is called the child class and the existing class is called the parent class. The child class inherits all the attributes and methods of the parent class.
+# class Animal:  # Parent class (superclass)
+#     Location = "India"  # Class attribute
+#     def __init__(self, name):
+#         self.name = name
+
+#     def speak(self):
+#         print("Generic animal sound")
+
+# class Dog(Animal):  # Dog inherits from Animal (Dog is a subclass of Animal)
+#     def speak(self):  # We *override* the speak method (more on this later)
+#         super().speak()  # Calls the method from  the parent class
+#         print("Woof!")
+        
+# # a= Dog("Dog")
+# # a.speak()
+# b= Dog("Tommy")
+# b.speak()
+# print(b.Location)
+
+#Operator overloading
+# class Point:    
+#     def __init__(self,x,y):
+#         self.x=x
+#         self.y=y
+#     def add(self,p):
+#         return Point((self.x + p.x),(self.y +p.y))
+#     def print_point(self):
+#             print(f"X is {self.x} and Y is {self.y}")
+#     def __mul__(self,p):
+#           return Point((self.x + p.x),(self.y +p.y))       
+    
+
+# p1=Point(3, 4)
+# p2=Point(6, 1)
+# #p3=p1.add(p2) # Returns new point which is sum of p1 & p2
+# # p3.print_point()
+# p=p1 +p2 #we overloaded the '+' operator to add two points
+# p.print_point()
+
