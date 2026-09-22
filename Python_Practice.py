@@ -230,3 +230,44 @@
 # p=p1 +p2 #we overloaded the '+' operator to add two points
 # p.print_point()
 
+#22/9/26
+
+#Decorators: Decorators are a way to modify the behavior of a function or a class. They are used to add functionality to an existing function or class without modifying its source code.
+
+# def decorater(func): #Decorator is a function that takes a function, it creates a new function  inside its body (wrapper), then it returns that new function
+#     def wrapper():
+#         print("I am about to execute a function...")
+#         func()
+#         print("I have executed this function...")
+        
+#     return wrapper
+
+# def say_hello():
+#     print("Hello!")
+    
+# a=decorater(say_hello)
+# a()
+
+
+#Getters:-  getters and setters are methods used to control access to an object's attributes (also known as properties or instance variables)
+# class Student:
+#     def __init__(self,name,roll):
+#         self.name=name
+#         self.roll=roll
+#     def first_name(self):
+#         l = self.name.split(" ")  #Whenever we get use '.split' with space we get a list
+#         print(l)
+#         return l[0]
+    
+#     def Last_name(self):
+#         m=self.name.split(" ")
+#         print(m)
+#         return m[1]
+# a= Student("abc def",48)
+# b= Student("mno xyz",47)
+# print(a.first_name())
+# print(a.Last_name())
+# print(b.first_name())
+# print(b.Last_name())
+
+
