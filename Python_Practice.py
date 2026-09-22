@@ -270,4 +270,36 @@
 # print(b.first_name())
 # print(b.Last_name())
 
+#class Employee:
+#     company="DRDO"
+#     def __init__(self,name,salary):
+#         self.name=name
+#         self.salary=salary
+#     #instance method: Normal method
+#     def information(self):
+#         # print(f"The name is {self.name} and salary is {self.salary}." )
+#         info=f"The name is {self.name} and salary is {self.salary}."
+#         print(info)  
+#     #Static method: Doesn't require self (instance attributes) and self is not automatically passed when we call the function. 
+#     @staticmethod #It is a decorater
+#     def sum(a,b):
+#         return a+b
+    
+#     #Class method
+#     @classmethod
+#     def print_company(cls):
+#         print(cls.company)
+#     @classmethod #we have to write decorater everytime when we use a new method
+#     def change_company(cls,new_company):
+#         cls.company=new_company
+    
+# a1 = Employee("Dilip",45000)
+# a2= Employee("Kumar",50000)
+# # a1.information()
+# # a2.information() 
+# # print(a1.sum(9,8))  #Error because it passes self by default so it passes 3 arguments (2 numbers & self)
+# a1.print_company()
+# a1.change_company("ISRO")
+# a1.print_company()
+# print(Employee.company) #Its actually changing the class variable not instance variable
 
