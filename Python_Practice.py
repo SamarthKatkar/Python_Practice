@@ -303,3 +303,27 @@
 # a1.print_company()
 # print(Employee.company) #Its actually changing the class variable not instance variable
 
+#23/9/26
+
+# Magic/ Dunder methods (Double underscore method)
+
+# class Employee:
+#     company ="HAL"
+#     def __init__(self,name,salary):
+#         self.name=name
+#         self.salary=salary
+    
+#     def __str__(self):
+#         return f"The namr is {self.name} and the salary is {self.salary}"
+    
+#     def __repr__(self): # Used for debugging
+#          return f"name:{self.name}\nSalary:{self.salary}"
+    
+#     def __len__(self):
+#         return len(self.name)
+      
+# e = Employee("Om",50000) 
+# # print(e.name,e.salary)
+# # print(str(e)) #Typecasting to str 
+# # print(repr(e))
+# print(len(e))
